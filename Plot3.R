@@ -27,13 +27,18 @@ RESULT<-dplyr::group_by(RESULT,Day)
 
 # lots of plotting
 png(file = "Plot3.png", width=480, height = 480)
+
 plot(RESULT$Sub_metering_1,xlab="",ylab="Energy sub metering",
      xaxt="n",type="l")
+
 lines(RESULT$Sub_metering_2,col="red",xlab="",ylab="",
      xaxt="n",type="l")
+
 lines(RESULT$Sub_metering_3,col="blue",xlab="",ylab="",
        xaxt="n",type="l")
 axis(1,c(1,1440,2880),labels=c("Thu","Fri","Sat"))
+
 legend("topright",lwd=1,col=c("black","red","blue"),
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+
 dev.off()
