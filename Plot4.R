@@ -47,7 +47,7 @@ lines(RESULT$Sub_metering_2,col="red",xlab="",ylab="",
 lines(RESULT$Sub_metering_3,col="blue",xlab="",ylab="",
       xaxt="n",type="l")
 axis(1,c(1,1440,2880),labels=c("Thu","Fri","Sat"))
-legend("topright",bty="n", lwd=1,col=c("black","red","blue"), cex=0.95,
+legend("topright",bty="n", lwd=1,col=c("black","red","blue"), cex=0.93,
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 # 4
