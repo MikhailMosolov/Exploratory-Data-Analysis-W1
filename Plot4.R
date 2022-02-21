@@ -47,12 +47,12 @@ lines(RESULT$Sub_metering_2,col="red",xlab="",ylab="",
 lines(RESULT$Sub_metering_3,col="blue",xlab="",ylab="",
       xaxt="n",type="l")
 axis(1,c(1,1440,2880),labels=c("Thu","Fri","Sat"))
-legend("topright",bty="n", lwd=1,col=c("black","red","blue"),
+legend("topright",bty="n", lwd=1,col=c("black","red","blue"), cex=0.95,
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 # 4
-plot(RESULT$Global_reactive_power,xlab="datetime", ylab="Global_active_power",xaxt="n"
-     ,yaxt="n",type="l")
+plot(RESULT$Global_reactive_power,xlab="datetime", ylab="Global_reactive_power",
+     ,xaxt="n",yaxt="n",type="l")
 axis(1,c(1,1440,2880),labels=c("Thu","Fri","Sat"))
 axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c('0.0','0.1','0.2','0.3','0.4','0.5'))
 
