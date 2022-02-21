@@ -32,5 +32,6 @@ png(file = "Plot2.png", width=480, height = 480)
 plot(RESULT$Global_active_power,xlab="",ylab="Global Active Power (killowats)",
      xaxt="n",type="l")
 axis(1,c(1,1440,2880),labels=c("Thu","Fri","Sat"))
+
 dev.off()
 
